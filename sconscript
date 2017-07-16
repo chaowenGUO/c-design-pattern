@@ -1,0 +1,5 @@
+import os
+env=Environment(CXX='g++',CXXFLAGS='-std=c++1z -O2 -finline-functions -ftree-vectorize -ffast-math -march=native -mveclibabi=svml -pthread -pipe -flto -fconcepts',LINK='g++',LINKFLAGS='-pthread',ENV=os.environ)
+#-Winline
+#google Options for Debugging Your Program or GCC -fopt-info
+Return('env')

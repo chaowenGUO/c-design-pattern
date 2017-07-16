@@ -1,0 +1,4 @@
+env=SConscript('../sconscript')
+
+import glob
+env.Program(target='a.out',source=glob.glob('*.cpp'))
